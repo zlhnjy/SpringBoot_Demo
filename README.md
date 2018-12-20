@@ -6,4 +6,4 @@
 
 ## demo_02
 &emsp;Spring常用配置  
-&emsp;Bean的Scope
+&emsp;Bean的Scope | Spring El和资源调用 | 
