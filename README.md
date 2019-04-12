@@ -6,8 +6,12 @@
 
 ## demo_02
 &emsp;Spring常用配置  
-&emsp;Bean的Scope | Spring El和资源调用 | 
+&emsp;Bean的Scope | Spring El和资源调用 
 
-## deom_09
-&emsp;批处理
+## demo_08
+&emsp;@Autowired @Resource 
+&emsp;&emsp;
+
+## demo_09
+&emsp;批处理Spring Batch
 

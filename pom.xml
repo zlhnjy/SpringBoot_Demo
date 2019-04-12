@@ -21,6 +21,7 @@
     <modules>
         <module>demo_01</module>
         <module>demo_02</module>
+        <module>demo_08</module>
         <module>demo_09</module>
     </modules>
 
