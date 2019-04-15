@@ -9,8 +9,8 @@
 &emsp;Bean的Scope | Spring El和资源调用 
 
 ## demo_08
-&emsp;@Autowired @Resource 
-&emsp;&emsp;
+&emsp;@Autowired @Resource  
+&emsp;@EnableCaching @Cachable
 
 ## demo_09
 &emsp;批处理Spring Batch

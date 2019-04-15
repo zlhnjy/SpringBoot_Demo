@@ -1,10 +1,13 @@
 package com.example.demo_08.controller;
 
+import com.example.demo_08.bean.PersonBean;
+import com.example.demo_08.entity.PersonEntity;
 import com.example.demo_08.service.impl.PersonServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import com.example.demo_08.service.IPersonService;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -13,7 +16,8 @@ import javax.annotation.Resource;
  * @Date: 2019/4/12 16:12
  * @Description:
  */
-@Controller
+@RestController
+@RequestMapping("/person")
 public class PersonController {
 
     //当使用@Autowired的时候，会优先匹配类型，如果存在多个实现类，会按照bean的名称进行匹配
@@ -29,5 +33,10 @@ public class PersonController {
     //当同时指定了name和type，则按照name和type同时匹配
 //    @Resource
 //    private  IPersonService personService;
+
+    @GetMapping("/{id}")
+    public PersonBean findById(@PathVariable("id") Long id) {
+        return personService.findById(id);
+    }
 
 }
