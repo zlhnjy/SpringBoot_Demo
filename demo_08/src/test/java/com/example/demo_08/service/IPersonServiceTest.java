@@ -39,4 +39,9 @@ public class IPersonServiceTest {
         List<PersonEntity> personEntityList = personService.list();
         System.out.println(JSON.toJSONString(personEntityList, true));
     }
+
+    @Test
+    public void testSave() {
+        personService.testSave();
+    }
 }

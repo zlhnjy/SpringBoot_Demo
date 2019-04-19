@@ -1,6 +1,8 @@
 package com.example.demo_08.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -12,6 +14,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "person")
 @Data
+@NoArgsConstructor
 public class PersonEntity {
 
     @Id
@@ -25,4 +28,8 @@ public class PersonEntity {
     @Column(name = "age")
     private Integer age;
 
+    public PersonEntity(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }
