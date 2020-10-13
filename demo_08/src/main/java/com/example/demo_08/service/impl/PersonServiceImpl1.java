@@ -29,6 +29,11 @@ public class PersonServiceImpl1 implements IPersonService {
     }
 
     @Override
+    public List<PersonEntity> save(List<PersonEntity> personEntities) {
+        return null;
+    }
+
+    @Override
     public List<PersonEntity> list() {
         return null;
     }

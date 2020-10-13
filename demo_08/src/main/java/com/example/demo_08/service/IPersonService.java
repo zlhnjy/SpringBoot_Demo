@@ -13,6 +13,7 @@ import java.util.List;
 public interface IPersonService {
 
     PersonEntity save(PersonEntity personEntity);
+    List<PersonEntity> save(List<PersonEntity> personEntities);
 
     List<PersonEntity> list();
 

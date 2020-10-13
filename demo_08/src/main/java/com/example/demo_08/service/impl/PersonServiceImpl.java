@@ -37,6 +37,11 @@ public class PersonServiceImpl implements IPersonService {
     }
 
     @Override
+    public List<PersonEntity> save(List<PersonEntity> personEntities) {
+        return personJpaRepository.saveAll(personEntities);
+    }
+
+    @Override
     public List<PersonEntity> list() {
         return personJpaRepository.findAll();
     }
